@@ -14,16 +14,20 @@ public class BasicCalculator
 
 		// Take input from the user
 		Scanner sc = new Scanner(System.in);
+		
+        for(int i=0;i<4;i++)
+		{
 
         // Take input for first number
-		System.out.println("Enter first numbers:");
+		System.out.println("\nEnter first number:");
 		num1 = sc.nextDouble();
 		
 		// Take input for second number
-		System.out.println("Enter first numbers:");
+		
+		System.out.println("\nEnter Second number:");
 		num2 = sc.nextDouble();
 
-		System.out.println("Enter the operator (+,-,*,/):");
+		System.out.println("\nEnter the operator (+,-,*,/):");
 
 		char op = sc.next().charAt(0);
 		double o = 0;
@@ -50,15 +54,15 @@ public class BasicCalculator
 			break;
 
 		default:
-			System.out.println("You enter wrong input");
+			System.out.println("\nYou enter wrong input");
 		}
-
-		System.out.println("The final result:");
-		System.out.println();
-
-		// print the final result
-		System.out.println(num1 + " " + op + " " + num2
+		
+         // print the final result
+		System.out.println("\nThe final result:"+"     "+num1 + " " + op + " " + num2
 						+ " = " + o);
+						
+		System.out.println();
+		}
 						
 	}
 }
